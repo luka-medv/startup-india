@@ -1,15 +1,26 @@
-# Automated Text Clustering and Quality Analysis
+#Text Clustering for Call Centre Data
 
+Description:
 
-This Python script performs automated clustering of text data from a CSV file. The script is specifically tailored for analyzing customer complaint data but can be adapted for other types of text data as well. 
+This Python script performs unsupervised text clustering on a dataset of call centre data. The script uses the TF-IDF Vectorizer and KMeans algorithm from the Scikit-learn library to cluster the text data. It determines the optimal number of clusters using the elbow method. The script then generates and prints descriptions for each cluster, the silhouette score, and the Davies-Bouldin index. The descriptions are formed by the top N (default is 15, can be modified) keywords in each cluster. It also plots a bar chart of the frequency of issues in each cluster.
 
-Features of the script include:
-- Capability to handle CSV files with one or multiple text columns. While the script can process multiple columns, for optimal results, it is recommended to use a file with a single text column that needs analysis.
-- Use of TF-IDF Vectorizer for converting the text into vectors.
-- Identification of optimal cluster numbers using the Elbow method.
-- Implementation of KMeans algorithm for clustering.
-- Generation of cluster descriptions based on the most relevant terms.
-- Calculation and display of Silhouette score and Davies-Bouldin index to evaluate the quality of the clustering.
-- Plotting of clusters for visual interpretation.
+The input data can be any CSV file with text data in its columns. The path to the file is defined by the variable `PATH_TO_FILE`.
 
-This script is beneficial for understanding and summarizing large amounts of text data, finding patterns, and improving customer service by identifying common issues.
+Input:
+
+The input file should be a CSV file with text data. Each column of the CSV file is treated as a separate category and clustering is performed on each of these categories. The path to the input file is defined by the variable `PATH_TO_FILE` in the script.
+
+Setup:
+
+1. Clone the repository to your local machine.
+2. Ensure that you have the necessary Python libraries installed. You can install them using pip:
+   ```
+   pip install pandas scikit-learn matplotlib numpy
+   ```
+3. Modify the `PATH_TO_FILE` variable in the script to point to your input CSV file.
+4. Modify the `NUM_OF_KEYWORDS_PER_CLUSTER` variable to control the number of keywords in the cluster descriptions.
+5. Run the script:
+   ```
+   python text_clustering.py
+   ```
+6. The script will print the cluster descriptions, silhouette score, and Davies-Bouldin index for each column in the CSV file. It will also display a bar chart showing the frequency of issues in each cluster.
