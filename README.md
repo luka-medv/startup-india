@@ -1,8 +1,10 @@
 # Automated Text Clustering and Quality Analysis
 
+
 This Python script performs automated clustering of text data from a CSV file. The script is specifically tailored for analyzing customer complaint data but can be adapted for other types of text data as well. 
 
 Features of the script include:
+- Capability to handle CSV files with one or multiple text columns. While the script can process multiple columns, for optimal results, it is recommended to use a file with a single text column that needs analysis.
 - Use of TF-IDF Vectorizer for converting the text into vectors.
 - Identification of optimal cluster numbers using the Elbow method.
 - Implementation of KMeans algorithm for clustering.
