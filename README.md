@@ -1,4 +1,4 @@
-# Automated Text Clustering and Quality Analysis**
+# Automated Text Clustering and Quality Analysis
 
 This Python script performs automated clustering of text data from a CSV file. The script is specifically tailored for analyzing customer complaint data but can be adapted for other types of text data as well. 
 
