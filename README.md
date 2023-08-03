@@ -21,6 +21,6 @@ The input file should be a CSV file with text data. Each column of the CSV file 
 4. Modify the `NUM_OF_KEYWORDS_PER_CLUSTER` variable to control the number of keywords in the cluster descriptions.
 5. Run the script:
    ```
-   python text_clustering.py
+   python clustering.py
    ```
 6. The script will print the cluster descriptions, silhouette score, and Davies-Bouldin index for each column in the CSV file. It will also display a bar chart showing the frequency of issues in each cluster.
