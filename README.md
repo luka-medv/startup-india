@@ -23,4 +23,8 @@ The input file should be a CSV file with text data. Each column of the CSV file 
    ```
    python clustering.py
    ```
-6. The script will print the cluster descriptions, silhouette score, and Davies-Bouldin index for each column in the CSV file. It will also display a bar chart showing the frequency of issues in each cluster.
+   or
+    ```
+   python predefined clusters.py
+   ```
+7. The script will print the cluster descriptions, silhouette score, and Davies-Bouldin index for each column in the CSV file. It will also display a bar chart showing the frequency of issues in each cluster.
